@@ -27,7 +27,6 @@ public class MainFrame extends JFrame{
 
 		Container contentPane = getContentPane();
 		contentPane.add(panel1, BorderLayout.CENTER);
-
+// tintin
 	}
 }
-
