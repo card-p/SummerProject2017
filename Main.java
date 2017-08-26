@@ -7,7 +7,7 @@ public class Main extends JFrame {
     MainFrame mainf = new MainFrame(this);
 
     public Main () {
-        setTitle("パスワード管理ツール");
+        setTitle("繝代せ繝ｯ繝ｼ繝臥ｮ｡逅�繧｢繝励Μ");
         setBounds(100, 100, 640, 480);
         this.add(mainf); mainf.setVisible(true);
     }
@@ -29,5 +29,8 @@ public class Main extends JFrame {
         Main mainSys = new Main();
         mainSys.setDefaultCloseOperation(EXIT_ON_CLOSE);
         mainSys.setVisible(true);
+
+	//	User loginUser = new User();
+	//	loginUser.sql();
     }
 }
