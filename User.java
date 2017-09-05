@@ -3,11 +3,12 @@ import java.sql.*;
 public class User {
 	String in_sentence;
 
+
     public static void sql() {
         Connection con = null;
         String url = "jdbc:mysql://localhost:3306/summer_vacation2017";
-		private String user = "adminsv17";
-		private String password = "summer17";
+		String user = "adminsv17";
+		String password = "summer17";
 
         try {
             // JDBCドライバのロード - JDBC4.0（JDK1.6）以降は不要
@@ -29,8 +30,7 @@ public class User {
             }
 
             // INSERT
-        //	stmt.executeUpdate("INSERT INTO users (id, email) VALUES (1001,'someone01@example.com')");
-        //	stmt.executeUpdate("INSERT INTO users (id, email) VALUES (1002,'someone02@example.com')");
+        //	stmt.executeUpdate("INSERT INTO users (userid, userpass) VALUES ('','')");
 
             // DELETE
         //	stmt.executeUpdate("DELETE FROM users where id=1001");
@@ -56,7 +56,7 @@ public class User {
         }
     }
 
-	public String insert(String newid, String newpass){
+	public void insert(String newid, String newpass){
 		in_sentence = "INSERT INTO users(userid, userpass) VALUES(newid, newpass)";
 	}
 }
